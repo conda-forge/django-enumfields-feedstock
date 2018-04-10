@@ -1,6 +1,6 @@
 {% set name = "django-enumfields" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "45c291bf94b31af5261c7d7d97a9993bdca92d1d52066992b71c0ff976f2bb36" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "e32cd668c02c63755ba5907cb2280f2568f72b4518d7d432df5cabf43c51b025" %}
 {% set build = 0 %}
 
 package:
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: {{ build }}
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
