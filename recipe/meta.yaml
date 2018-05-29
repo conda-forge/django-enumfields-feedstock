@@ -1,6 +1,6 @@
 {% set name = "django-enumfields" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "e32cd668c02c63755ba5907cb2280f2568f72b4518d7d432df5cabf43c51b025" %}
+{% set version = "0.10.1" %}
+{% set sha256 = "839fbf620b6a1d9f5ceff4933fbedd606e908d7e5b5a6a81736066bf8efa89f6" %}
 
 package:
   name: {{ name }}
