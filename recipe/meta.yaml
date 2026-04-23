@@ -1,21 +1,21 @@
 {% set name = "django-enumfields" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "4777530650a2c3be22e256610b897aefe665a8b77ce1a319bb81fb9e5a2a469c" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "37c86214089ee09f375a135ba8e269da7c154fff76c063f5948becd802a33c0a" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/hzdg/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/hzdg/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
